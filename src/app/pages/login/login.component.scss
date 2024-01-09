@@ -1,0 +1,140 @@
+//whole page container
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.card {
+  width: 40%;
+  border-radius: 0.3rem;
+}
+//Media querry
+@media screen and (max-width: 767px) {
+  .card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .inputGroupContent {
+    padding: 0;
+  }
+}
+//logo area
+.imageContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.imageContainer img {
+  width: 180;
+  height: 180px;
+}
+
+//Form area
+
+.inputGroupContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inputGroupContent {
+  width: 100%;
+  padding: 0.5rem;
+}
+//inputs
+
+.inputField {
+  width: 100%;
+  background-color: pink;
+  margin: 0;
+}
+//remove padding padrão que vem junto com o matFormField e outros componentes
+:host ::ng-deep .mat-form-field-wrapper {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.matFormField {
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+//Checkbox save password
+
+.rememberForgetPasswordContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rememberPasswordCheck {
+  font-size: 0.7rem;
+}
+
+.forgetPassword {
+  font-size: 0.7rem;
+}
+
+.forgetPassword a {
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+
+//button
+
+.buttonContainer {
+  padding: 1.5rem;
+}
+
+//create Account Redirect message
+
+.createAccountRedirect {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+  width: 100%;
+}
+//create account link
+.createAccountRedirect a {
+  color: var(--primaryColor);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.createAccountRedirect a:hover {
+  color: var(--primaryColorLigher);
+}
+
+//divider line
+
+.dividerBarContainer {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.dividerBar {
+  width: 50%;
+  padding: 0.02rem;
+  background-color: var(--primaryColor);
+}
+
+.dividerBarText {
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  font-size: 0.8rem;
+}

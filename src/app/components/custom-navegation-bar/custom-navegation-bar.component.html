@@ -1,0 +1,35 @@
+<div class="toolBarContainer" *ngIf="!isMobileScreen">
+  <span class="toolBarImageContainer">
+    <img src="/assets/logos/ReviewGourmet-logo.png" alt="" />
+    <span class="logoNameContainer">Review Gourmet</span>
+  </span>
+  <span class="toolBarActionsContainer">
+    <span class="toolBarAction"><button mat-button>Home</button></span>
+    <span class="toolBarAction"><button mat-button>Categorias</button></span>
+    <span class="toolBarAction"><button mat-button>Reviews</button></span>
+    <span class="toolBarAction"><button mat-button>Empresas</button></span>
+  </span>
+  <span class="toolBarButtonsContainer">
+    <span class="toolBarButtonsContent">
+      <span class="profileButton">
+        <mat-icon>person</mat-icon>
+        <span class="login">Entrar</span>
+      </span>
+      <span class="profileButton"> <span class="signIn">Criar</span></span>
+    </span>
+  </span>
+</div>
+
+<div class="toolBarContainerMobile" *ngIf="isMobileScreen">
+  <div class="toolBarContentMobile">
+    <span class="buttonContainerMobile">
+      <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+    </span>
+    <span class="toolBarImageContainer">
+      <img src="/assets/logos/ReviewGourmet-logo.png" alt="" />
+      <span class="logoNameContainer">Review Gourmet</span>
+    </span>
+  </div>
+</div>

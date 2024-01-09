@@ -1,0 +1,133 @@
+//container tool bar
+
+.toolBarContainer {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+
+  background-color: var(--primaryColor);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+//container logo image
+
+.toolBarImageContainer {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(247, 234, 209);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  box-shadow: 5px 0px 5px -7px rgba(0, 0, 0, 0.75),
+    -5px 0px 5px -7px rgba(0, 0, 0, 0.75);
+
+  border-bottom: none;
+}
+//logo name inside imageContainer
+.logoNameContainer {
+  font-size: 0.6rem;
+  padding-bottom: 0.2rem;
+  color: var(--fontColor);
+
+  font-family: "Amaranth", sans-serif;
+}
+//image
+.toolBarImageContainer img {
+  height: 100%;
+}
+
+.toolBarActionsContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolBarAction {
+  color: white;
+}
+
+.toolBarAction button {
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.toolBarAction button:hover {
+  background-color: var(--primaryColorLighter);
+}
+
+.toolBarAction:not(:last-child) {
+  border-right: 1px solid #f7ead1;
+}
+
+//Login and signUP
+.toolBarButtonsContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.toolBarButtonsContent {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.profileButton {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 0.9rem;
+  color: white;
+  padding: 0.8rem;
+}
+
+.profileButton:not(:last-child) {
+  border-right: 1px solid #f7ead1;
+}
+
+.profileButton:hover {
+  background-color: var(--primaryColorLighter);
+}
+
+.profileButton mat-icon {
+  margin-right: 0.2rem;
+}
+
+.signIn {
+  width: fit-content;
+}
+
+//mobile tool Bar
+
+.toolBarContainerMobile {
+  width: 100%;
+  height: 15%;
+  display: flex;
+
+  background-color: var(--primaryColor);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.toolBarContentMobile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toolBarImageContainer {
+  margin-right: 1rem;
+}
+
+.buttonContainerMobile {
+  margin-left: 0.6rem;
+  color: white;
+}

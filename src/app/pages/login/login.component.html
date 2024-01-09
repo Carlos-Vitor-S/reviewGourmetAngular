@@ -1,0 +1,55 @@
+<div class="container">
+  <mat-card class="card">
+    <div class="imageContainer">
+      <img
+        src="/assets/logos/ReviewGourmet-logo.png"
+        alt="logo ReviewGourmet"
+      />
+    </div>
+    <div class="inputGroupContainer">
+      <div class="inputGroupContent">
+        <form action="#">
+          <mat-form-field
+            appearance="outline"
+            class="matFormField"
+            color="primary"
+            SubscriptSizing="dynamic"
+          >
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" />
+          </mat-form-field>
+
+          <mat-form-field
+            appearance="outline"
+            class="matFormField"
+            color="primary"
+            SubscriptSizing="dynamic"
+          >
+            <mat-label>Senha</mat-label>
+            <input matInput placeholder="Senha" type="password" />
+          </mat-form-field>
+          <span class="rememberForgetPasswordContainer">
+            <mat-checkbox class="rememberPasswordCheck" color="primary"
+              >Lembrar senha</mat-checkbox
+            >
+            <span class="forgetPassword"
+              ><a href="#">Esqueceu sua senha?</a></span
+            >
+          </span>
+
+          <div class="buttonContainer">
+            <app-custom-button [replace]="textoBotao"></app-custom-button>
+          </div>
+        </form>
+      </div>
+      <span class="createAccountRedirect"
+        >Nao possui cadastro? <a href="#">Crie sua conta</a></span
+      >
+      <div class="dividerBarContainer">
+        <span class="dividerBar"></span>
+        <span class="dividerBarText">Ou</span>
+        <span class="dividerBar"></span>
+      </div>
+    </div>
+  </mat-card>
+</div>
